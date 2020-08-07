@@ -484,4 +484,107 @@ var john = {
 
 john.calcAge();
 console.log(john);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+var john = {
+    fullName: 'John Smith',
+    mass: 70,
+    height: 1.70,
+    bmiCalc: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+var mark = {
+    fullName: 'Mark Zucks',
+    mass: 80,
+    height: 1.80,
+    bmiCalc: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+john.bmiCalc();
+mark.bmiCalc();
+console.log(john, mark);
+
+switch(true) {
+    case john.bmi > mark.bmi:
+        console.log(john.fullName + ' bmi is ' + john.bmi);
+    break;
+    case mark.bmi > mark.bmi:
+        console.log(mark.fullName + 'bmi is ' + mark.bmi);
+    break;
+    default:
+        console.log(john.fullName + ' and ' + mark.fullName + ' have the same bmi');
+};
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+var john = {
+    fullName: 'John Smith',
+    mass: 70,
+    height: 1.70,
+    bmiCalc: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+var mark = {
+    fullName: 'Mark Zucks',
+    mass: 80,
+    height: 1.80,
+    bmiCalc: function() {
+        this.bmi = this.mass / (this.height * this.height);
+        return this.bmi;
+    }
+};
+
+
+switch(true) {
+    case john.bmiCalc() > mark.bmiCalc():
+        console.log(john.fullName + ' bmi is ' + john.bmi);
+    break;
+    case mark.bmi > john.bmi:
+        console.log(mark.fullName + ' bmi is ' + mark.bmi);
+    break;
+    default:
+        console.log(john.fullName + ' and ' + mark.fullName + ' have the same bmi');
+};
+
+
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// i = 0, 0 < 10 true, log i to console, i++
+///...
+// i = 9, 9 < 10 true, log i to console, i++
+// i = 10, 10 < 10 FALSE, exit the loop!
+
+for (var i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
+for (var i = 1; i <= 20; i += 2) {
+    console.log(i);
+}
 */
+
+//LOOPS
+
+var john = ['John', 'Smith', 1990, 'designer', false];
+for (var i = 0; i < john.length; i++) {
+    console.log(john[i]);
+}
+
+var i = 0;
+while(i < john,length) {
+    console.log(john[i]);
+    i++;
+}
