@@ -104,7 +104,6 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
 
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -139,3 +138,36 @@ if(friends.includes('Steven')) {
 } else {
     console.log('Not a friend')
 }
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Doe',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Mike', 'Peter', 'Steve']
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt('what do you want to know?');
+
+if(jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wrong request. what do you want to know?');
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@something';
+console.log(jonas);
+
+//Challenge
+console.log(jonas.firstName + ' has ' + jonas.friends.length + ' friends, and his best friend is called ' + jonas.friends[0]);
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
