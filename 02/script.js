@@ -170,7 +170,6 @@ console.log(jonas);
 //Challenge
 console.log(jonas.firstName + ' has ' + jonas.friends.length + ' friends, and his best friend is called ' + jonas.friends[0]);
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-*/
 
 const jonas = {
     firstName: 'Jonas',
@@ -194,13 +193,13 @@ const jonas = {
         return this.age;
     },
 
-    /*getSummary: function() {
-        if(this.hasDriverLicense == true) {
-            console.log(`${this.firstName} is a ${this.age}- year old teacher, and he has a driver license.`)
-        } else {
-            console.log(`${this.firstName} is a ${this.age}- year old teacher, and he has not a driver license.`)
-        }
-    }*/
+    //getSummary: function() {
+        //if(this.hasDriverLicense == true) {
+         //   console.log(`${this.firstName} is a ${this.age}- year old teacher, and he has a driver license.`)
+        //} else {
+        //    console.log(`${this.firstName} is a ${this.age}- year old teacher, and he has not a driver license.`)
+      //  }
+    //
 
     getSummary: function() {
         return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} driver license.`
@@ -216,3 +215,8 @@ console.log(jonas.age);
 //console.log(jonas['calcAge'](jonas.birthYear));
 
 console.log(jonas.getSummary());
+*/
+
+for(let rep = 1; rep <= 30; rep++) {
+    console.log(`lifting rep ${rep}`);
+}
