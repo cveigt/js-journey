@@ -292,7 +292,6 @@ while(rep <= 10) {
     console.log(`WHILE: Lifting weight repetition ${rep}`);
     rep++;
 }
-*/
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
@@ -305,3 +304,6 @@ while (dice !== 6) {
 const x = 23;
 console.log('hey');
 const calcAge = birthYear => 2037 - birthYear;
+
+console.log(calcAge(1991));
+*/
