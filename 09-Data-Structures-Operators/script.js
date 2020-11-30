@@ -40,6 +40,13 @@ const restaurant = {
   },
 };
 
+const arr = [7, 8, 9];
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+
+console.log(...newArr);
+
+/*
 restaurant.orderDelivery({
   time: '22:30',
   address: '1212 king street',
@@ -76,6 +83,7 @@ const {
   fri: { open: o, close: c },
 } = openingHours;
 console.log(o, c);
+*/
 
 // Destructuring arrays
 /*
