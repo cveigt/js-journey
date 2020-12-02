@@ -46,6 +46,9 @@ console.log(newArr);
 
 console.log(...newArr);
 
+const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+console.log(newMenu);
+
 /*
 restaurant.orderDelivery({
   time: '22:30',
