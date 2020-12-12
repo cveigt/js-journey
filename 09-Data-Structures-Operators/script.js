@@ -49,6 +49,15 @@ const restaurant = {
   },
 };
 
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+for (const item of menu) console.log(item);
+
+for (const [i, el] of menu.entries()) {
+  console.log(`${i + 1}: ${el}`);
+}
+
+/*
 restaurant.numGuests = 0;
 const guests = restaurant.numGuests || 10;
 console.log(guests);
@@ -56,6 +65,7 @@ console.log(guests);
 // Nullish values: null and undefined (NOT 0 or '')
 const guestCorrect = restaurant.numGuests ?? 10;
 console.log(guestCorrect);
+*/
 
 /*
 // Short circuiting (&& and ||)
