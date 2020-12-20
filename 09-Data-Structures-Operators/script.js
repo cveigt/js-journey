@@ -48,6 +48,14 @@ const restaurant = {
   },
 };
 
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+for (const day of Object.keys(openingHours)) {
+  console.log(day);
+}
+
+/*
 // Optional chaining
 console.log(restaurant.openingHours.mon?.open);
 console.log(restaurant.openingHours?.mon?.open);
@@ -60,6 +68,7 @@ for (const day of days) {
   console.log(`On ${day}, we open at ${open}`);
 }
 
+
 // Methods
 console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist.');
 
@@ -67,6 +76,7 @@ console.log(restaurant.orderRisotto?.(0, 1) ?? 'Method does not exist.');
 const users = [{ name: 'Jonas', email: 'hello@jonas.io' }];
 //const users = [];
 console.log(users[0]?.name ?? 'User array empty');
+*/
 
 /*
 // The for-of Loop
