@@ -25,6 +25,13 @@ console.log(jonas);
 const flightNum = flight;
 const passport = jonas;
 
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 100000000);
+};
+
+newPassport(jonas);
+checkIn(flight, jonas);
+
 /*
 const bookings = [];
 
