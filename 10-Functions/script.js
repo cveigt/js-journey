@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 const flight = "LH234";
 const jonas = {
   name: "Jonas S",
@@ -32,7 +33,7 @@ const newPassport = function (person) {
 newPassport(jonas);
 checkIn(flight, jonas);
 
-/*
+
 const bookings = [];
 
 const createBooking = function (
