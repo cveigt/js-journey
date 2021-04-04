@@ -1,6 +1,6 @@
 'use strict';
 
-const oneWord = function (str) {
+/*const oneWord = function (str) {
   return str.replace(/ /g, '').toLowerCase();
 };
 
@@ -18,7 +18,7 @@ const transformer = function (str, fn) {
 
 transformer('JavaScript is the best', upperFirstWord);
 
-/*
+
 const flight = "LH234";
 const jonas = {
   name: "Jonas S",
