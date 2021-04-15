@@ -1,5 +1,22 @@
 'use strict';
 
+// Immediately Invoked Function Expressions (IIFE)
+const runOnce = function () {
+  console.log('This will never run again');
+};
+runOnce();
+
+(function () {
+  console.log('This will never run again');
+  const isPrivate = 23;
+})();
+
+// Cant access isPrivate because of scope
+// console.log(isprivate);
+
+(() => console.log('This will ALSO never run again'))();
+
+/*
 const poll = {
   question: 'What is your favorite programming language?',
   options: ['0: JavaScript', '1: Phyton', '2: Rust', '3: C++'],
@@ -43,7 +60,7 @@ poll.displayResults.call({ answers: [1, 5, 3, 9, 6, 1] });
 // [5, 2, 3]
 // [1, 5, 3, 9, 6, 1]
 
-/*
+
 const lufthansa = {
   airline: 'Lufthansa',
   iataCode: 'LH',
