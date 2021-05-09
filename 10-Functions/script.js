@@ -1,5 +1,22 @@
 'use strict';
 
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(`${passengerCount} passengers`);
+  };
+};
+
+const booker = secureBooking();
+booker();
+booker();
+booker();
+
+console.dir(booker);
+
+/*
 // Immediately Invoked Function Expressions (IIFE)
 const runOnce = function () {
   console.log('This will never run again');
@@ -16,7 +33,7 @@ runOnce();
 
 (() => console.log('This will ALSO never run again'))();
 
-/*
+
 const poll = {
   question: 'What is your favorite programming language?',
   options: ['0: JavaScript', '1: Phyton', '2: Rust', '3: C++'],
