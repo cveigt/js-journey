@@ -198,7 +198,7 @@ const movementsDescription = movements.map(
     )}`
 );
 console.log(movementsDescription);
-*/
+
 
 const deposits = movements.filter(function (mov) {
   return mov > 0;
@@ -210,3 +210,14 @@ console.log(deposits);
 const withdrawals = movements.filter(mov => mov < 0);
 
 console.log(withdrawals);
+*/
+
+console.log(movements);
+
+// accumulator -> SNOWBALL
+// const balance = movements.reduce(function (acc, cur, i, arr) {
+//   console.log(`Iteration ${i}: ${acc}`);
+//   return acc + cur;
+// }, 0);
+const balance = movements.reduce((acc, cur) => acc + cur, 0);
+console.log(balance);
