@@ -1,5 +1,6 @@
 'use strict';
 
+/*
 // Example 1
 let f;
 
@@ -41,7 +42,6 @@ const boardPassengers = function (n, wait) {
 const perGroup = 1000;
 boardPassengers(180, 3);
 
-/*
 // Closures
 const secureBooking = function () {
   let passengerCount = 0;
