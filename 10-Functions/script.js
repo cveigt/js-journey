@@ -1,5 +1,17 @@
 'use strict';
 
+const booking = [];
+
+const createBooking = function (flightnNum, numPassengers, price) {
+  const booking = {
+    flightNum,
+    numPassengers,
+    price,
+  };
+  console.log(booking);
+  booking.push(booking);
+};
+
 /*
 // Example 1
 let f;
